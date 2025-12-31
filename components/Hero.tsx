@@ -13,9 +13,11 @@ export const Hero: React.FC = () => {
           <p className="text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed">
             Veja para onde seu dinheiro vai e tome decisões melhores todos os meses, sem complicação.
           </p>
-          <button className="cta-button py-4 px-8 rounded-xl text-lg font-bold uppercase tracking-wider">
-            Quero organizar meu dinheiro
-          </button>
+          <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
+            <button className="cta-button py-4 px-8 rounded-xl text-lg font-bold uppercase tracking-wider">
+              Quero organizar meu dinheiro
+            </button>
+          </a>
         </div>
 
         <div className="relative group">

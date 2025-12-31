@@ -104,9 +104,11 @@ export const Testimonials: React.FC = () => {
         </div>
 
         <div className="flex justify-center pt-8">
-          <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase">
-            Quero organizar meu dinheiro
-          </button>
+          <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
+            <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase">
+              Quero organizar meu dinheiro
+            </button>
+          </a>
         </div>
       </div>
 

@@ -24,9 +24,11 @@ export const Pricing: React.FC = () => {
             <h3 className="text-7xl md:text-9xl font-black text-white">R$ 27,00</h3>
           </div>
 
-          <button className="cta-button w-full py-6 px-8 rounded-[2rem] text-xl font-black uppercase tracking-widest mt-8">
-            Quero organizar meu dinheiro
-          </button>
+          <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer" className="block">
+            <button className="cta-button w-full py-6 px-8 rounded-[2rem] text-xl font-black uppercase tracking-widest mt-8">
+              Quero organizar meu dinheiro
+            </button>
+          </a>
 
           {/* Decorative glass bits */}
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-600 rounded-3xl -z-10 blur-3xl opacity-30"></div>

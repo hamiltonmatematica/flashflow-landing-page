@@ -32,9 +32,11 @@ export const ProblemSection: React.FC = () => {
               Quanto entra, quanto sai e para onde seu dinheiro está indo sem apps confusos e sem planilhas impossíveis de entender.
             </p>
           </div>
-          <button className="cta-button py-4 px-8 rounded-xl text-lg font-bold uppercase">
-            Quero organizar meu dinheiro
-          </button>
+          <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
+            <button className="cta-button py-4 px-8 rounded-xl text-lg font-bold uppercase">
+              Quero organizar meu dinheiro
+            </button>
+          </a>
         </div>
       </div>
     </section>

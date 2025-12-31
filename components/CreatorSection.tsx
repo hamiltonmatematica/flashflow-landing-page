@@ -35,9 +35,11 @@ export const CreatorSection: React.FC = () => {
             <p>Uma ferramenta simples, visual e objetiva que qualquer pessoa conseguisse usar sem precisar entender termos técnicos ou passar horas organizando dados.</p>
           </div>
 
-          <button className="cta-button py-4 px-8 rounded-xl text-lg font-bold uppercase">
-            Quero organizar meu dinheiro
-          </button>
+          <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
+            <button className="cta-button py-4 px-8 rounded-xl text-lg font-bold uppercase">
+              Quero organizar meu dinheiro
+            </button>
+          </a>
         </div>
       </div>
     </section>
