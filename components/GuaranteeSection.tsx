@@ -53,7 +53,7 @@ export const GuaranteeSection: React.FC = () => {
                             Você poderá solicitar o cancelamento e reembolso integral em até 7 dias após a compra, caso não queira mais continuar com a planilha.
                         </p>
 
-                        <div className="pt-6">
+                        <div className="pt-6 text-center">
                             <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
                                 <button className="cta-button py-5 px-4 md:px-6 rounded-xl text-lg md:text-xl font-bold uppercase tracking-wider shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/60 transition-all">
                                     Começar agora sem risco
