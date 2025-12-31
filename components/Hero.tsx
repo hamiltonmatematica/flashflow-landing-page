@@ -26,14 +26,6 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating spreadsheet icons - purple rectangles with emoji */}
-      {/* Top center above laptop */}
-      <div className="absolute top-16 right-[35%] md:right-[38%] animate-float z-20">
-        <div className="w-16 h-16 md:w-20 md:h-20 bg-[#7C3AED] rounded-2xl rotate-12 flex items-center justify-center shadow-2xl shadow-purple-600/50">
-          <span className="text-3xl md:text-4xl">📊</span>
-        </div>
-      </div>
-
       {/* Right side bottom */}
       <div className="absolute bottom-24 right-[5%] md:right-[8%] animate-float z-20" style={{ animationDelay: '1.5s' }}>
         <div className="w-14 h-14 md:w-18 md:h-18 bg-[#7C3AED] rounded-xl -rotate-6 flex items-center justify-center shadow-2xl shadow-purple-600/50">
