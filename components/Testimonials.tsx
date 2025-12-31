@@ -5,32 +5,32 @@ import { Star, CheckCircle2 } from 'lucide-react';
 const reviews = [
   {
     name: "João Vitor",
-    date: "15. Setembro. 2025",
+    date: "15. Setembro. 2024",
     text: '"O FlashFlow resolveu bem o meu problema, falta de clareza financeira. A visualização em dashboard facilitou o meu entendimento rápido, obrigado!"'
   },
   {
     name: "Andreiylson Silva",
-    date: "26. Outubro. 2025",
+    date: "26. Outubro. 2024",
     text: '"O que mais gostei foi bater o olho e entender tudo. Não preciso ficar interpretando números. Em pouco tempo já consegui cortar gastos que nem sabia que tinha."'
   },
   {
     name: "Mariana Costa",
-    date: "03. Novembro. 2025",
+    date: "03. Novembro. 2024",
     text: '"Finalmente encontrei uma ferramenta que me ajuda a entender meu dinheiro sem complicação. Super recomendo!"'
   },
   {
     name: "Rafael Santos",
-    date: "12. Novembro. 2025",
+    date: "12. Novembro. 2024",
     text: '"Simples, direto e eficiente. Em uma semana já consegui identificar onde estava perdendo dinheiro. Vale muito a pena!"'
   },
   {
     name: "Juliana Alves",
-    date: "18. Novembro. 2025",
+    date: "18. Novembro. 2024",
     text: '"A melhor planilha financeira que já usei! Interface intuitiva e resultados rápidos. Consegui organizar minha vida financeira."'
   },
   {
     name: "Carlos Eduardo",
-    date: "25. Novembro. 2025",
+    date: "25. Novembro. 2024",
     text: '"Muito prático e fácil de usar. Não preciso ser especialista em finanças para entender meus gastos. Excelente!"'
   }
 ];
@@ -54,17 +54,18 @@ export const Testimonials: React.FC = () => {
   );
 
   return (
-    <section className="py-24 px-4 bg-[#050505] relative overflow-hidden">
+    <section className="py-24 px-4 bg-black relative overflow-hidden">
       <div className="max-w-5xl mx-auto space-y-16">
-        <h2 className="text-3xl md:text-5xl font-bold text-center leading-tight">
-          O que os nossos <span className="text-purple-500">usuários</span> estão falando da planilha:
-        </h2>
-
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+            <span className="text-[#7C3AED]">O que os nossos</span> <span className="text-white">usuários estão falando da planilha</span>
+          </h2>
+        </div>
         <div className="relative">
           {/* Background blurred items */}
-          <div className="absolute inset-0 -z-10 grid grid-cols-4 gap-4 opacity-20 blur-sm pointer-events-none">
+          <div className="absolute inset-0 -z-10 grid grid-cols-4 gap-4 opacity-10 blur-sm pointer-events-none">
             {[...Array(8)].map((_, i) => (
-              <div key={i} className="bg-zinc-800 p-8 rounded-lg"></div>
+              <div key={i} className="bg-white/5 p-8 rounded-lg"></div>
             ))}
           </div>
 
@@ -72,32 +73,32 @@ export const Testimonials: React.FC = () => {
             {visibleReviews.map((rev, i) => (
               <div
                 key={`${currentIndex}-${i}`}
-                className="bg-zinc-900/90 border border-white/5 p-8 rounded-2xl space-y-4 animate-fade-in"
+                className="bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-white/10 p-8 rounded-2xl space-y-4 animate-fade-in hover:border-purple-500/30 transition-all"
               >
                 <div className="flex justify-between items-start">
                   <div>
-                    <h4 className="font-bold">{rev.name}</h4>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-widest">{rev.date}</p>
+                    <h4 className="font-extrabold text-lg text-white">{rev.name}</h4>
+                    <p className="text-[10px] text-gray-400 uppercase tracking-widest">{rev.date}</p>
                   </div>
                   <div className="flex gap-0.5 items-center">
-                    {[...Array(5)].map((_, j) => <Star key={j} size={14} className="fill-yellow-500 text-yellow-500" />)}
-                    <div className="ml-1 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
-                      <CheckCircle2 size={10} className="text-white" />
+                    {[...Array(5)].map((_, j) => <Star key={j} size={16} className="fill-yellow-400 text-yellow-400" />)}
+                    <div className="ml-1 w-5 h-5 bg-emerald-500 rounded-full flex items-center justify-center">
+                      <CheckCircle2 size={12} className="text-white" />
                     </div>
                   </div>
                 </div>
-                <p className="text-gray-300 italic leading-relaxed">{rev.text}</p>
+                <p className="text-gray-200 italic leading-relaxed">{rev.text}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-center gap-3">
           {[...Array(totalPages)].map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`w-2 h-2 rounded-full transition-colors ${i === currentIndex ? 'bg-emerald-400' : 'bg-zinc-700'
+              className={`w-3 h-3 rounded-full transition-all ${i === currentIndex ? 'bg-[#7C3AED] w-8' : 'bg-white/30'
                 }`}
             />
           ))}
@@ -105,7 +106,7 @@ export const Testimonials: React.FC = () => {
 
         <div className="flex justify-center pt-8">
           <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
-            <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase">
+            <button className="cta-button py-5 px-12 rounded-2xl text-lg md:text-xl font-extrabold uppercase tracking-wider bg-[#1CBA5C] hover:bg-[#158C47] text-white shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/60 transition-all">
               Quero organizar meu dinheiro
             </button>
           </a>

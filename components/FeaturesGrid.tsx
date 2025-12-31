@@ -18,7 +18,7 @@ const features = [
   {
     icon: <ArrowDownCircle className="text-black" />,
     title: "Seus gastos de verdade",
-    items: ["Quanto você gasta no mês", "Onde mais consome", "Onde estão os gatos invisíveis"]
+    items: ["Quanto você gasta no mês", "Onde mais consome", "Onde estão os gastos invisíveis"]
   },
   {
     icon: <PieChart className="text-black" />,
@@ -44,18 +44,18 @@ const features = [
 
 export const FeaturesGrid: React.FC = () => {
   return (
-    <section className="py-20 px-4 md:px-8 max-w-6xl mx-auto">
+    <section className="py-24 px-4 md:px-8 max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature, idx) => (
-          <div key={idx} className="bg-purple-600/20 border border-purple-500/20 p-8 rounded-3xl space-y-6 hover:bg-purple-600/30 transition-colors">
-            <div className="bg-white p-3 rounded-xl w-fit">
-              {React.cloneElement(feature.icon as React.ReactElement, { size: 32 })}
+          <div key={idx} className="bg-gradient-to-br from-[#7C3AED] to-[#5a0a6f] border border-white/20 p-8 rounded-3xl space-y-6 hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-2xl shadow-purple-900/30">
+            <div className="bg-white p-4 rounded-2xl w-fit shadow-lg">
+              {React.cloneElement(feature.icon as React.ReactElement, { size: 36 })}
             </div>
-            <h3 className="text-xl font-bold">{feature.title}</h3>
+            <h3 className="text-xl md:text-2xl font-extrabold text-white leading-tight">{feature.title}</h3>
             <ul className="space-y-3">
               {feature.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-white mt-2 flex-shrink-0"></span>
+                <li key={i} className="flex items-start gap-3 text-sm md:text-base text-gray-100">
+                  <span className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></span>
                   {item}
                 </li>
               ))}
@@ -65,10 +65,10 @@ export const FeaturesGrid: React.FC = () => {
       </div>
 
       {/* Call to action button */}
-      <div className="flex justify-center mt-12">
-        <a href="#para-quem-e">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white py-4 px-12 rounded-full text-lg font-bold transition-all duration-300 shadow-lg shadow-purple-500/30">
-            Para quem é?
+      <div className="flex justify-center mt-16">
+        <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
+          <button className="bg-[#1CBA5C] hover:bg-[#158C47] text-white py-5 px-12 rounded-full text-lg md:text-xl font-extrabold uppercase tracking-wider transition-all duration-300 shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/60">
+            Quero organizar meu dinheiro
           </button>
         </a>
       </div>

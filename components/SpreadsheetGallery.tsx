@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 
 const mediaItems = [
+    { type: 'video', src: 'video-planilha.mp4', alt: 'Vídeo demonstrativo da planilha' },
     { type: 'image', src: 'Fotos planilha1.png', alt: 'FlashFlow Planilha - Tela 1' },
     { type: 'image', src: 'Fotos planilha2.png', alt: 'FlashFlow Planilha - Tela 2' },
     { type: 'image', src: 'Fotos planilha3.png', alt: 'FlashFlow Planilha - Tela 3' },
-    { type: 'video', src: 'video-planilha.mp4', alt: 'Vídeo demonstrativo da planilha' },
     { type: 'image', src: 'Fotos planilha4.png', alt: 'FlashFlow Planilha - Tela 4' },
     { type: 'image', src: 'Fotos planilha5.png', alt: 'FlashFlow Planilha - Tela 5' },
     { type: 'image', src: 'Fotos planilha6.png', alt: 'FlashFlow Planilha - Tela 6' },
@@ -137,7 +137,7 @@ export const SpreadsheetGallery: React.FC = () => {
                 {/* CTA */}
                 <div className="text-center">
                     <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
-                        <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase">
+                        <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase bg-[#10B981] hover:bg-[#059669] text-white transition-all shadow-lg hover:shadow-emerald-500/30">
                             Quero organizar meu dinheiro
                         </button>
                     </a>

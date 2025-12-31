@@ -5,50 +5,57 @@ import { TrendingUp } from 'lucide-react';
 export const Hero: React.FC = () => {
   return (
     <section className="relative pt-20 pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-visible min-h-[90vh] flex items-center">
-      {/* Purple gradient background with geometric lines */}
+      {/* Purple gradient background - simplified to avoid color conflicts */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* Purple gradient overlay - much stronger */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#6b1a7c]/50 via-[#4a0e5e]/30 to-transparent"></div>
-
-        {/* Geometric grid lines - more visible */}
-        <div className="absolute inset-0 opacity-30">
+        {/* Subtle grid lines only */}
+        <div className="absolute inset-0 opacity-20">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(167, 92, 246, 0.4)" strokeWidth="1" />
+                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(167, 92, 246, 0.3)" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
         </div>
 
-        {/* Diagonal lines - more visible */}
+        {/* Diagonal lines */}
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 left-10 w-64 h-px bg-gradient-to-r from-transparent via-purple-300/50 to-transparent rotate-45 origin-left"></div>
-          <div className="absolute top-20 right-20 w-96 h-px bg-gradient-to-r from-transparent via-purple-300/40 to-transparent -rotate-45 origin-right"></div>
+          <div className="absolute top-10 left-10 w-64 h-px bg-gradient-to-r from-transparent via-purple-300/40 to-transparent rotate-45 origin-left"></div>
+          <div className="absolute top-20 right-20 w-96 h-px bg-gradient-to-r from-transparent via-purple-300/30 to-transparent -rotate-45 origin-right"></div>
         </div>
       </div>
 
-      {/* Floating decorative elements - Green spreadsheet icons */}
-      <div className="absolute top-32 left-10 md:left-20 animate-float z-0">
-        <div className="w-20 h-20 md:w-24 md:h-24 bg-emerald-500/30 backdrop-blur-md rounded-3xl rotate-12 flex items-center justify-center border border-emerald-400/40 shadow-2xl shadow-emerald-500/30">
-          <span className="text-4xl md:text-5xl blur-[0.5px]">📊</span>
+      {/* Floating spreadsheet icons - purple rectangles with emoji */}
+      {/* Top center above laptop */}
+      <div className="absolute top-16 right-[35%] md:right-[38%] animate-float z-20">
+        <div className="w-16 h-16 md:w-20 md:h-20 bg-[#7C3AED] rounded-2xl rotate-12 flex items-center justify-center shadow-2xl shadow-purple-600/50">
+          <span className="text-3xl md:text-4xl">📊</span>
         </div>
       </div>
 
-      <div className="absolute bottom-20 left-8 md:left-16 animate-float z-0" style={{ animationDelay: '1.2s' }}>
-        <div className="w-16 h-16 md:w-20 md:h-20 bg-emerald-500/30 backdrop-blur-md rounded-2xl -rotate-12 flex items-center justify-center border border-emerald-400/40 shadow-2xl shadow-emerald-500/30">
-          <span className="text-3xl md:text-4xl blur-[0.5px]">📊</span>
+      {/* Right side bottom */}
+      <div className="absolute bottom-24 right-[5%] md:right-[8%] animate-float z-20" style={{ animationDelay: '1.5s' }}>
+        <div className="w-14 h-14 md:w-18 md:h-18 bg-[#7C3AED] rounded-xl -rotate-6 flex items-center justify-center shadow-2xl shadow-purple-600/50">
+          <span className="text-2xl md:text-3xl">📊</span>
         </div>
       </div>
 
-      {/* Large Purple 3D rectangular shapes */}
+      {/* Purple decorative rectangles */}
       <div className="absolute top-28 right-12 md:right-20 animate-pulse-glow z-0">
-        <div className="w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-lg rounded-[2rem] rotate-12 border border-purple-500/30 shadow-2xl shadow-purple-600/20"></div>
+        <div className="w-40 h-32 md:w-56 md:h-40 bg-[#7C3AED] rounded-[2rem] rotate-12 shadow-2xl shadow-purple-600/50"></div>
       </div>
 
       <div className="absolute bottom-28 right-32 md:right-48 animate-pulse-glow z-0" style={{ animationDelay: '0.8s' }}>
-        <div className="w-32 h-32 md:w-44 md:h-44 bg-gradient-to-br from-purple-600/15 to-purple-800/15 backdrop-blur-lg rounded-[2rem] -rotate-6 border border-purple-500/25 shadow-2xl shadow-purple-600/20"></div>
+        <div className="w-32 h-32 md:w-44 md:h-44 bg-[#9333EA] rounded-[2rem] -rotate-6 shadow-2xl shadow-purple-600/40"></div>
+      </div>
+
+      <div className="absolute top-1/2 right-[60%] md:right-[55%] animate-float z-0" style={{ animationDelay: '1.5s' }}>
+        <div className="w-28 h-36 md:w-36 md:h-44 bg-[#A855F7] rounded-[2rem] rotate-6 shadow-xl shadow-purple-500/40"></div>
+      </div>
+
+      <div className="absolute bottom-20 right-[8%] md:right-[12%] animate-pulse-glow z-0" style={{ animationDelay: '0.5s' }}>
+        <div className="w-24 h-24 md:w-32 md:h-32 bg-[#7C3AED] rounded-2xl -rotate-12 shadow-lg shadow-purple-600/40"></div>
       </div>
 
       {/* Main content grid */}
