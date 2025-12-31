@@ -3,15 +3,15 @@ import React from 'react';
 
 export const WhoIsItFor: React.FC = () => {
   return (
-    <section className="py-24 px-4 bg-black relative overflow-hidden">
+    <section id="para-quem-e" className="py-24 px-4 bg-black relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center space-y-16">
         <div className="inline-block glass-card px-12 py-6 rounded-3xl">
           <h2 className="text-3xl md:text-4xl font-bold">Para quem é?</h2>
         </div>
 
         <div className="relative flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Vertical/Horizontal Line with Dots */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-full bg-white/30 hidden md:block"></div>
+          {/* Vertical Line with Dots */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-full bg-purple-600/40 hidden md:block"></div>
 
           <div className="w-full md:w-5/12 text-center md:text-right space-y-12">
             <p className="text-gray-300">Para aqueles que não entendem muito e quer mudar sua vida financeira.</p>
@@ -20,11 +20,12 @@ export const WhoIsItFor: React.FC = () => {
             <p className="text-gray-300">Para pessoas insatisfeitas com a sua vida financeira.</p>
           </div>
 
-          {/* Dots on the line (mobile centered, desktop aligned) */}
+          {/* Dots on the line */}
           <div className="flex md:flex-col gap-8 md:gap-24 relative z-10 py-4">
-            <div className="w-4 h-4 rounded-full bg-purple-600 border-4 border-black ring-2 ring-purple-600"></div>
-            <div className="w-4 h-4 rounded-full bg-purple-600 border-4 border-black ring-2 ring-purple-600"></div>
-            <div className="w-4 h-4 rounded-full bg-purple-600 border-4 border-black ring-2 ring-purple-600"></div>
+            <div className="w-5 h-5 rounded-full bg-purple-600 border-4 border-black"></div>
+            <div className="w-5 h-5 rounded-full bg-purple-600 border-4 border-black"></div>
+            <div className="w-5 h-5 rounded-full bg-purple-600 border-4 border-black"></div>
+            <div className="w-5 h-5 rounded-full bg-purple-600 border-4 border-black"></div>
           </div>
 
           <div className="w-full md:w-5/12 text-center md:text-left space-y-12">
@@ -37,7 +38,7 @@ export const WhoIsItFor: React.FC = () => {
 
         <div className="pt-12">
           <a href="https://pay.kiwify.com.br/lTezrlP" target="_blank" rel="noopener noreferrer">
-            <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase">
+            <button className="cta-button py-4 px-12 rounded-2xl text-lg font-bold uppercase tracking-wider">
               Quero organizar meu dinheiro
             </button>
           </a>
