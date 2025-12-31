@@ -7,25 +7,25 @@ export const Hero: React.FC = () => {
     <section className="relative pt-20 pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-visible min-h-[90vh] flex items-center">
       {/* Purple gradient background with geometric lines */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* Purple gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-purple-800/20 to-transparent"></div>
+        {/* Purple gradient overlay - much stronger */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#6b1a7c]/50 via-[#4a0e5e]/30 to-transparent"></div>
 
-        {/* Geometric grid lines */}
-        <div className="absolute inset-0 opacity-20">
+        {/* Geometric grid lines - more visible */}
+        <div className="absolute inset-0 opacity-30">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(139, 92, 246, 0.3)" strokeWidth="1" />
+                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(167, 92, 246, 0.4)" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
         </div>
 
-        {/* Diagonal lines */}
+        {/* Diagonal lines - more visible */}
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 left-10 w-64 h-px bg-gradient-to-r from-transparent via-purple-400/40 to-transparent rotate-45 origin-left"></div>
-          <div className="absolute top-20 right-20 w-96 h-px bg-gradient-to-r from-transparent via-purple-400/30 to-transparent -rotate-45 origin-right"></div>
+          <div className="absolute top-10 left-10 w-64 h-px bg-gradient-to-r from-transparent via-purple-300/50 to-transparent rotate-45 origin-left"></div>
+          <div className="absolute top-20 right-20 w-96 h-px bg-gradient-to-r from-transparent via-purple-300/40 to-transparent -rotate-45 origin-right"></div>
         </div>
       </div>
 
