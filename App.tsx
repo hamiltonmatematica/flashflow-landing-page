@@ -13,11 +13,12 @@ import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#050505]">
-      {/* Background ambient glow */}
+    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-[#1a0a2e] via-[#16001e] to-[#050505]">
+      {/* Background ambient glow - stronger purple for hero section */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-900/20 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-purple-700/30 blur-[150px] rounded-full"></div>
+        <div className="absolute top-0 right-[-10%] w-[50%] h-[50%] bg-purple-900/25 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-900/15 blur-[120px] rounded-full"></div>
       </div>
 
       <main className="relative z-10">
