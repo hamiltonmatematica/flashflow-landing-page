@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <p className="text-xl md:text-2xl text-gray-300">Fale comigo agora.</p>
         </div>
 
-        <a href="https://wa.me/5521999612603" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto block">
+        <a href="https://wa.me/5521999612603?text=Ol%C3%A1%20!%20Acessei%20sua%20p%C3%A1gina%20e%20gostaria%20de%20saber%20mais%20detalhes%20sobre%20a%20planilha%20FlashFlow" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto block">
           <button className="w-full md:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white py-6 px-12 rounded-[2rem] text-xl md:text-2xl font-extrabold flex items-center justify-center gap-4 transition-all shadow-2xl shadow-green-500/40 hover:shadow-green-500/60 mx-auto">
             {/* WhatsApp Icon */}
             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
