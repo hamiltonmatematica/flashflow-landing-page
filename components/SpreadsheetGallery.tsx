@@ -6,7 +6,7 @@ const mediaItems = [
     { type: 'image', src: 'Fotos planilha1.png', alt: 'FlashFlow Planilha - Tela 1' },
     { type: 'image', src: 'Fotos planilha2.png', alt: 'FlashFlow Planilha - Tela 2' },
     { type: 'image', src: 'Fotos planilha3.png', alt: 'FlashFlow Planilha - Tela 3' },
-    { type: 'video', src: 'vídeo planilha.mp4', alt: 'Vídeo demonstrativo da planilha' },
+    { type: 'video', src: 'video-planilha.mp4', alt: 'Vídeo demonstrativo da planilha' },
     { type: 'image', src: 'Fotos planilha4.png', alt: 'FlashFlow Planilha - Tela 4' },
     { type: 'image', src: 'Fotos planilha5.png', alt: 'FlashFlow Planilha - Tela 5' },
     { type: 'image', src: 'Fotos planilha6.png', alt: 'FlashFlow Planilha - Tela 6' },
@@ -72,6 +72,7 @@ export const SpreadsheetGallery: React.FC = () => {
                                     controls
                                     muted
                                     playsInline
+                                    preload="metadata"
                                     className="w-full h-full object-contain"
                                     onPlay={() => setIsAutoPlaying(false)}
                                 >
