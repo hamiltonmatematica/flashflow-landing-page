@@ -13,9 +13,6 @@ export const ProblemSection: React.FC = () => {
             <div className="absolute top-4 right-4 bg-red-600/90 text-white p-3 rounded-full">
               <XCircle size={32} />
             </div>
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[80%] glass-card p-4 rounded-xl">
-              <p className="text-sm font-medium text-purple-300">Dashboard Complicado</p>
-            </div>
           </div>
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-900/20 blur-[100px] rounded-full"></div>
         </div>
