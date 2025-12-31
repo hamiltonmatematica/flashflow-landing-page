@@ -15,16 +15,30 @@ const mediaItems = [
 
 export const SpreadsheetGallery: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+    useEffect(() => {
+        if (!isAutoPlaying) return;
+
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % mediaItems.length);
+        }, 5000); // Muda a cada 5 segundos
+
+        return () => clearInterval(interval);
+    }, [isAutoPlaying]);
 
     const goToPrevious = () => {
+        setIsAutoPlaying(false);
         setCurrentIndex((prev) => (prev - 1 + mediaItems.length) % mediaItems.length);
     };
 
     const goToNext = () => {
+        setIsAutoPlaying(false);
         setCurrentIndex((prev) => (prev + 1) % mediaItems.length);
     };
 
     const goToSlide = (index: number) => {
+        setIsAutoPlaying(false);
         setCurrentIndex(index);
     };
 
@@ -60,6 +74,7 @@ export const SpreadsheetGallery: React.FC = () => {
                                     playsInline
                                     preload="metadata"
                                     className="w-full h-full object-contain"
+                                    onPlay={() => setIsAutoPlaying(false)}
                                 >
                                     <source src={currentItem.src} type="video/mp4" />
                                     Seu navegador não suporta vídeos.
