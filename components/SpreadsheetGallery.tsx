@@ -57,9 +57,9 @@ export const SpreadsheetGallery: React.FC = () => {
                 </div>
 
                 {/* Carrossel Principal */}
-                <div className="relative">
-                    <div className="relative bg-zinc-900/40 border border-white/10 rounded-3xl p-4 md:p-8 overflow-hidden">
-                        <div className="relative aspect-video rounded-2xl overflow-hidden bg-black/50">
+                <div className="relative max-w-5xl mx-auto">
+                    <div className="relative bg-zinc-900/40 border border-white/10 rounded-3xl p-3 md:p-6 overflow-hidden">
+                        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-black/50">
                             {currentItem.type === 'image' ? (
                                 <img
                                     src={currentItem.src}
@@ -70,9 +70,8 @@ export const SpreadsheetGallery: React.FC = () => {
                                 <video
                                     key={currentItem.src}
                                     controls
-                                    autoPlay
                                     muted
-                                    loop
+                                    playsInline
                                     className="w-full h-full object-contain"
                                     onPlay={() => setIsAutoPlaying(false)}
                                 >
@@ -114,8 +113,8 @@ export const SpreadsheetGallery: React.FC = () => {
                                 key={index}
                                 onClick={() => goToSlide(index)}
                                 className={`relative flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-2 transition-all ${index === currentIndex
-                                        ? 'border-purple-500 ring-2 ring-purple-500/50'
-                                        : 'border-white/10 hover:border-purple-400'
+                                    ? 'border-purple-500 ring-2 ring-purple-500/50'
+                                    : 'border-white/10 hover:border-purple-400'
                                     }`}
                             >
                                 {item.type === 'image' ? (
