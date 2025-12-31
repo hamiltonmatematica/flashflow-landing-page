@@ -7,7 +7,7 @@ export const CreatorSection: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <div className="relative z-10 rounded-[3rem] border-2 border-white/10 overflow-hidden aspect-[4/5]">
-            <img src="leandro.png" alt="Leandro Machado" className="w-full h-full object-cover" />
+            <img src="leandro.png" alt="Leandro Machado" className="w-full h-full object-contain" />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           </div>

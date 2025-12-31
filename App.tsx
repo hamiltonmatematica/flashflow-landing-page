@@ -7,6 +7,7 @@ import { FeaturesGrid } from './components/FeaturesGrid';
 import { WhoIsItFor } from './components/WhoIsItFor';
 import { Testimonials } from './components/Testimonials';
 import { CreatorSection } from './components/CreatorSection';
+import { SpreadsheetGallery } from './components/SpreadsheetGallery';
 import { Pricing } from './components/Pricing';
 import { Footer } from './components/Footer';
 
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <FeaturesGrid />
         <WhoIsItFor />
         <Testimonials />
+        <SpreadsheetGallery />
         <CreatorSection />
         <Pricing />
         <Footer />
